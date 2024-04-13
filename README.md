@@ -1,18 +1,17 @@
 # WIP, not suited for production yet!!! only for testing!!!
 
-# To setup and deploy, be in this directory and run:
-./Deploy.sh
+# How-to:
+1. Copy paste the <b>inner contents</b> of the folder 'NepaliIntegration_GibbonFiles' into gibbon's main folder
 
-NOTE: It can take a while for database to startup, <br>
-during which gibbon might say that it can't connect to the database.
+2. Make sure docker is installed, if yes then skip this step, <br>
+otherwise run : 'apt install docker-compose-v2' (if necessary run, 'apt update' first)
 
-To stop, use: ./Stop.sh
+3. To run the date helper backend: 'docker compose up --build -d',  (while in this directory) <br>
 
-# During Gibbon Installation, for step 2, use:
-Database Address -> db <br>
-Database Name -> gibbondb <br>
-User -> gibbon <br>
-Password -> gibbonPass <br>
+4. Refresh gibbon webpage
 
-# Refs:
-Original docker project can be obtained through kerrongordon's github, using github tag "kerrongordon/gibbon-docker"
+Notes:<br>
+i. To stop backend helper: 'docker compose down', (while in this directory)
+
+ii. To check if it is running, run 'docker compose ls', (from any directory) <br>
+and check if 'nepali-date-helper' service is displayed and is also running.

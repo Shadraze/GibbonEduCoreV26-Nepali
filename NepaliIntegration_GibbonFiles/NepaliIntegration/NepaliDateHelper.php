@@ -15,7 +15,7 @@ class NepaliDateHelper
 
     private static function apiCallBackend($year, $month, $day)
     {
-        $response = self::$client->post("nepali-integration-backend:8848/ad2bs", ['json' => ['year' => $year, 'month' => $month, 'day' => $day]]);
+        $response = self::$client->post("127.0.0.1:8448/ad2bs", ['json' => ['year' => $year, 'month' => $month, 'day' => $day]]);
         return json_decode($response->getBody());
     }
 
