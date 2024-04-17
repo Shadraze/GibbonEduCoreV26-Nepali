@@ -1,8 +1,0 @@
-version: "3"
-services:
-  nepali-date-helper:
-    build: ./NepaliIntegration_DateHelperService
-    container_name: nepali-date-helper
-    restart: unless-stopped
-    ports: 
-      - 8448:8448
