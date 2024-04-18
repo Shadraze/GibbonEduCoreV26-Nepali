@@ -757,3 +757,6 @@ if ($showSidebar) {
  * DONE!!
  */
 echo $page->render('index.twig.html');
+
+//// NEPALI INTEGRATION
+include 'NepaliIntegration/hamroPatroCalenderToolbar.php';

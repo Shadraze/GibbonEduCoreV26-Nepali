@@ -145,9 +145,3 @@ if (!empty($session->get('module'))) {
 
 // Sanitize incoming user-supplied GET variables
 $_GET = $container->get(\Gibbon\Data\Validator::class)->sanitizeUrlParams($_GET);
-
-
-//// NEPALI INTEGRATION
-// Hamro Patro Calender Toolbar
-$homepage = file_get_contents('NepaliIntegration/hamroPatroCalenderToolbar.html');
-echo $homepage;
