@@ -24,7 +24,7 @@ v26.0.00-Nepali
 --------
 
     Changes:
-        Modified /gibbon.php
+        Modified /index.php
         Modified /modules/Timetable/module_functions.php
         Added /index_custom.php
         Added /NepaliIntegration 
